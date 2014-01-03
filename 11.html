@@ -1,0 +1,686 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <!--[if lt IE 9]>
+            <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <![endif]-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="robots" content="index, follow, all" />
+        <meta name="Author" content="Extreme Sensio" />
+        <meta name="Language" content="en"/>
+        <meta name="Copyright" content="Sensio Labs" />
+        <meta name="Publisher" content="Sensio Labs" />
+        <meta name="Description" content="Symfony - Open-Source PHP web framework" />
+        <meta name="Keywords" content="symfony2, symfony, project, framework, php, php5, open-source, components, symphony, symfony framework, symfony tutorial" />
+
+        <link rel="search" type="application/opensearchdescription+xml" href="http://symfony.com/opensearch/documentation.xml" title="Symfony2 documentation" />
+
+        <title>Reference Documents (current) - Symfony</title>
+
+                        <link rel="stylesheet" href="/css/compiled/all.css?v=4" />
+                 <link href="https://connect.sensiolabs.com/css/sln.css" rel="stylesheet" type="text/css" media="all" />
+
+        <!--[if lte IE 7]>
+            <link rel="stylesheet" href="/css/common/ltie7.css" />
+        <![endif]-->
+
+                
+                    <script type="text/javascript" src="/js/all.js?v=4"></script>
+        
+        <!--[if lt IE 9]>
+          <script src="/js/common/html5.js" type="text/javascript"></script>
+        <![endif]-->
+
+        <!--[if IE 6]>
+            <script src="/js/common/DD_belatedPNG_0.0.7a-min.js" type="text/javascript"></script>
+            <script src="/js/common/ExtendDD_belatedPNG_0.0.7a.js" type="text/javascript"></script>
+            <script type="text/javascript">
+                DD_belatedPNG.fix('.png_fix');
+            </script>
+        <![endif]-->
+
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-89393-6']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+
+        <link rel="canonical" href="http://symfony.com/doc/current/reference/index.html" />
+    </head>
+
+    <body>
+        <div id="content_wrapper" class="">
+            <div id="sln"></div>
+
+            <div class="content">
+                
+    
+    
+<div class="header">
+    <div class="content_header clear_fix">
+        <div class="illustration_logo_header">
+                            <a href="/"><img src="/images/common/logo/logo_symfony_header.png" alt="Symfony" class="png_fix" /></a>
+                    </div>
+        <div class="box_download clear_fix">
+            <div class="legend_download">
+                <img src="/images/en/a_sensiolabs_product.png" alt="a SensioLabs product" class="png_fix" />
+            </div>
+            <div class="download_button_wrapper">
+                <a href="/download" class="download_button">    <span class="border_l png_fix">
+        <span class="border_r png_fix">
+            <span class="btn_bg png_fix">
+                DOWNLOAD NOW
+            </span>
+        </span>
+    </span>
+</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <div class="main_menu clear_fix" id="main_menu_id">
+                    <ul class="clear_fix">
+            <li class="first ">
+                                                    <a href="/what-is-symfony">What is Symfony?</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/get-started">Get started</a>
+                    </li>
+            <li class=" selected">
+                                                    <a href="/doc/current/index.html">Documentation</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/community">Community</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/services">Services</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/blog/">News</a>
+            <div class="box_dropdown_wrapper">
+    <div class="border_l">
+        <div class="middle_border_l">
+            <div class="border_r">
+                <div class="middle_border_r">
+                    <div class="content_wrapper">
+                        <div class="box_content">
+                                <div class="inner_drop_box_two_columns clear_fix">
+        <div class="inner_drop_box_two_columns_column_01">
+            <h2 class="dropdown_title">
+                <div class="button"><a href="http://twitter.com/symfony" title="twitter account"><img style="width: 35px; margin-top: -10px" src="/images/common/picto/twitter.png" alt="Twitter" /></a></div>
+                <div class="button"><a href="http://feeds.feedburner.com/symfony/blog" title="blog feed"><img src="/images/common/picto/rss.gif" alt="feed" /></a></div>
+                <a href="/blog/">Latest News</a>
+            </h2>
+
+            <div class="box_article post">
+                    <div class="gravatar"><a href="https://connect.sensiolabs.com/api/alternates/7e428bbf-cbf1-46db-a96f-86bb68600519"><img width="57" height="57" src="https://connect.sensiolabs.com/api/images/7e428bbf-cbf1-46db-a96f-86bb68600519.png?format=57x57" alt="Anne-Sophie Bachelard"></a></div>
+                <h3 class="title_05"><a href="/blog/symfonycon-warsaw-2013-was-a-blast">SymfonyCon Warsaw 2013 was a blast!</a></h3>
+                <div class="complementaries_informations">
+    by
+            <a href="https://connect.sensiolabs.com/api/alternates/7e428bbf-cbf1-46db-a96f-86bb68600519">Anne-Sophie Bachelard</a>
+            – December 20, 2013
+        </div>
+            </div>
+
+                <div class="box_hr"><hr /></div>
+
+
+            <div class="box_article">
+                <h2 class="title_05"><a href="/blog/a-week-of-symfony-365-23-29-december-2013">What happened last week in Symfony?</a></h2>
+                <p>This week, Symfony development activity focused on minor fixes and improvements, Twig continued working on HHVM compatibility and Silex allowed to use strings instead of constants for Monolog logging levels. Meanwhile, a lot of new discussions and proposals were initiated at the repository, such as <a href="https://github.com/symfony/symfony/pull/9862">simplifying the addition of request formats</a>, <a href="https://github.com/symfony/symfony/pull/9857">improving the form debugger</a> and <a href="https://github.com/symfony/symfony/pull/9855">decoupling Twig commands from Symfony</a>.</p>
+            </div>
+        </div>
+        <div class="inner_drop_box_two_columns_column_02">
+            <h2 class="dropdown_title">
+                <div class="button"><a href="http://twitter.com/symfony" title="twitter account"><img style="width: 35px; margin-top: -10px" src="/images/common/picto/twitter.png" alt="Twitter" /></a></div>
+                <div class="button"><a href="http://feeds.feedburner.com/symfony/events" title="events rss"><img src="/images/common/picto/rss.gif" alt="RSS" /></a></div>
+                <a href="/events/">Upcoming Events</a>
+            </h2>
+
+            <div class="box_article">
+                <p>The Symfony Community organizes events all over the world on a regular basis. Here are the next ones.</p>
+                                    <p><em>No upcoming events</em></p>
+                            </div>
+        </div>
+    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="corner_l">
+            <div class="corner_r">
+                <div class="border"></div>
+            </div>
+        </div>
+    </div>
+</div>
+        </li>
+            <li class="last ">
+                                                    <a href="/about">About</a>
+                    </li>
+    </ul>
+                </div>
+
+                                    <div class="main_content">
+                                                    <div class="box_columns clear_fix">
+                                                                                                            <div class="column_01">
+                                                                                            <div class="submenu">
+                                                    <ul class="list_submenu">    <li class="first"><a href="/doc/current/book/index.html">The Book</a></li>
+<li><a href="/doc/current/cookbook/index.html">The Cookbook</a></li>
+<li><a href="/doc/current/components/index.html">The Components</a></li>
+<li class="selected"><a href="/doc/current/reference/index.html">Reference</a></li>
+<li><a href="/doc/current/glossary.html">Glossary</a></li>
+<li><a href="/doc/current/genindex.html">Index</a></li>
+<li><a href="/doc/current/bundles/index.html">Bundles</a></li>
+<li><a href="/doc/master/cmf/index.html">Symfony CMF</a></li>
+<li><a href="/doc/master/contributing/code/security.html#security-advisories">Security Advisories</a></li>
+<li><a href="/legacy/doc">Docs for symfony 1.x</a></li>
+<li><a href="/doc/current/contributing/index.html">Contributing</a></li>
+<li><a href="/talks">Talks</a></li>
+<li><a href="http://trainings.sensiolabs.com/">Trainings</a></li>
+<li class="last"><a href="http://books.sensiolabs.com">Books</a></li>
+</ul>
+                                                </div>
+                                                    
+    <div class="feedback">
+    <h2 class="title_05">Questions &amp; Feedback</h2>
+    <p>
+      <em>Found a typo or an error?</em><br />
+      <em>Want to improve this document?</em> <a href="https://github.com/symfony/symfony-docs/edit/2.4/reference/index.rst">Edit</a> it.
+    </p>
+    <p>
+      <em>Need support or have a technical question?</em><br />
+      Post to the <a href="http://groups.google.com/group/symfony2">user mailing-list</a>.
+     </p>
+</div>
+    <div id="license">
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+        <img alt="Creative Commons License" src="http://symfony.com/images/license.png" />
+    </a>
+    <div>
+        This <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/MovingImage" rel="dc:type">work</span> is licensed under a
+        <br />
+        Creative Commons
+        <br />
+        Attribution-Share Alike 3.0
+        <br />
+        Unported <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">License</a>.
+    </div>
+</div>
+                                                
+<div class="ads">
+        <div class="box_hr"><hr /></div>
+
+    <div id="ad_jobs" data-url="http://jobs.sensiolabs.com/api/random"></div>
+            <div class="ad" id="ad_trainings_1">
+            <h3><a href="http://trainings.sensiolabs.com/en/training/getting-started-with-symfony2">Master Symfony2 fundamentals</a></h3>
+            <div>Be trained by SensioLabs experts (2 to 6 day sessions -- French or English).</div>
+            <div><cite>trainings.sensiolabs.com</cite></div>
+        </div>
+            <div class="ad" id="ad_support_1">
+            <h3><a href="http://sensiolabs.com/en/support/sensiolabs_support.html">Discover the SensioLabs Support</a></h3>
+            <div>Access to the SensioLabs Competency Center for an exclusive and tailor-made support on Symfony</div>
+            <div><cite>sensiolabs.com</cite></div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+                    $("#ad_trainings_1").click(function () { _gaq.push(['_trackEvent', 'Ads', 'Ads', 'trainings_1']); });
+                    $("#ad_support_1").click(function () { _gaq.push(['_trackEvent', 'Ads', 'Ads', 'support_1']); });
+            });
+</script>
+                                                                                                    <div class="ads">
+                                                        <a href="http://sensiolabs.com/en/symfony/certification.html"><img src="/images/sensiolabs_certification.png?v=4" /></a>
+                                                    </div>
+                                                                                                                                    </div>
+                                                                        <div class="column_02">
+                                                                                    <div class="breadcrumb">
+                                                <a href="/">Home</a> &raquo;
+                                                            <a href="/doc/current/index.html">Documentation</a> &raquo;
+    
+    
+    Reference Documents
+                                            </div>
+
+                                                                                                <div class="box_title">
+                                                        <div class="box_version_wrapper">
+        <div class="version_wrapper">
+            <div class="version">
+                2.4 version
+                <span class="arrow">
+                    <img src="/images/common/picto/down_arrow_white.png" alt="" />
+                </span>
+            </div>
+            <div class="other_version">
+                                    <ul>
+                                                                                    <li>
+                                    <a href="/doc/2.0/reference/index.html">2.0 version</a>
+                                </li>
+                                                                                                                <li>
+                                    <a href="/doc/2.1/reference/index.html">2.1 version</a>
+                                </li>
+                                                                                                                <li>
+                                    <a href="/doc/2.2/reference/index.html">2.2 version</a>
+                                </li>
+                                                                                                                <li>
+                                    <a href="/doc/2.3/reference/index.html">2.3 version</a>
+                                </li>
+                                                                                                                                                                    <li>
+                                    <a href="/doc/master/reference/index.html">master version</a>
+                                </li>
+                                                                        </ul>
+                                                                            <hr />
+                                        <ul>
+                                                                                    <li>
+                                    <a href="/fr/doc/current/reference/index.html">French</a>
+                                </li>
+                                                                                                                <li>
+                                    <a href="/it/doc/current/reference/index.html">Italian</a>
+                                </li>
+                                                                        </ul>
+                            </div>
+        </div>
+    </div>
+
+    <div class="doc-edit">
+        <a href="https://github.com/symfony/symfony-docs/edit/2.4/reference/index.rst">Edit this page</a>
+    </div>
+                                                    <h1 class="title_01">Reference Documents</h1>
+                                                </div>
+                                            
+                <div class="block_grey_lowlight_wrapper">
+            <div class="block_grey_lowlight">
+                <div class="clear_fix">
+                    <div class="column_left">
+                        <img src="/images/common/picto/learn_symfony_reference_big.png" alt="" class="png_fix" />
+                    </div>
+                    <div class="column_right">
+                        <p>
+                            Discover the power of customizing the framework the way you want.
+                        </p>
+                        <p>
+                                                        <a id="reference-pdf" href="/pdf/Symfony_reference_2.4.pdf?v=4" class="non_extensible_button button_01 button_01_selected">    <span class="border_l png_fix">
+        <span class="border_r png_fix">
+            <span class="btn_bg png_fix">
+                DOWNLOAD AS PDF
+            </span>
+        </span>
+    </span>
+</a>
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $("#reference-pdf").click(function () {
+                                        _gaq.push(['_trackEvent', 'Downloads', 'PDF', '/pdf/Symfony_reference_2.4.pdf']);
+                                    });
+                                });
+                            </script>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+                                                
+    <div class="box_article doc_page">
+        <div class="section" id="reference-documents">
+<h1>Reference Documents<a class="headerlink" href="#reference-documents" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<ul>
+<li><p class="first"><strong>Configuration Options</strong></p>
+<p>Ever wondered what configuration options you have available to you in files
+such as <tt class="docutils literal"><code>app/config/config.yml</code></tt>? In this section, all the available configuration
+is broken down by the key (e.g. <tt class="docutils literal"><code>framework</code></tt>) that defines each possible
+section of your Symfony2 configuration.</p>
+<ul class="simple">
+<li><a class="reference internal" href="configuration/framework.html"><em>framework</em></a></li>
+<li><a class="reference internal" href="configuration/doctrine.html"><em>doctrine</em></a></li>
+<li><a class="reference internal" href="configuration/security.html"><em>security</em></a></li>
+<li><a class="reference internal" href="configuration/assetic.html"><em>assetic</em></a></li>
+<li><a class="reference internal" href="configuration/swiftmailer.html"><em>swiftmailer</em></a></li>
+<li><a class="reference internal" href="configuration/twig.html"><em>twig</em></a></li>
+<li><a class="reference internal" href="configuration/monolog.html"><em>monolog</em></a></li>
+<li><a class="reference internal" href="configuration/web_profiler.html"><em>web_profiler</em></a></li>
+</ul>
+</li>
+<li><p class="first"><a class="reference internal" href="configuration/kernel.html"><em>Configuring the Kernel (e.g. AppKernel)</em></a></p>
+</li>
+<li><p class="first"><strong>Forms and Validation</strong></p>
+<ul class="simple">
+<li><a class="reference internal" href="forms/types.html"><em>Form Field Type Reference</em></a></li>
+<li><a class="reference internal" href="constraints.html"><em>Validation Constraints Reference</em></a></li>
+<li><a class="reference internal" href="forms/twig_reference.html"><em>Twig Template Function and Variable Reference</em></a></li>
+</ul>
+</li>
+<li><p class="first"><a class="reference internal" href="twig_reference.html"><em>Twig Extensions (forms, filters, tags, etc) Reference</em></a></p>
+</li>
+<li><p class="first"><strong>Other Areas</strong></p>
+<ul class="simple">
+<li><a class="reference internal" href="dic_tags.html"><em>The Dependency Injection Tags</em></a></li>
+<li><a class="reference internal" href="requirements.html"><em>Requirements for running Symfony2</em></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+    </div>
+
+                                                                                </div>
+                                                            </div>
+                        
+                        
+                                                    <div class="box_relative_content">
+    <div class="relative_content_box_columns clear_fix">
+        <div class="column_01">
+            <h2 class="title_05">NEWS FROM THE BLOG</h2>
+
+<ul class="event_list">
+            <li>
+            <h3>
+                <a href="/blog/a-week-of-symfony-365-23-29-december-2013">
+                    A week of symfony #365 (23-&gt;29 December 2013)<br />
+                    <span class="place_date">December 29, 2013</span>
+                </a>
+            </h3>
+        </li>
+            <li>
+            <h3>
+                <a href="/blog/a-week-of-symfony-364-16-22-december-2013">
+                    A week of symfony #364 (16-&gt;22 December 2013)<br />
+                    <span class="place_date">December 22, 2013</span>
+                </a>
+            </h3>
+        </li>
+            <li>
+            <h3>
+                <a href="/blog/symfonycon-warsaw-2013-was-a-blast">
+                    SymfonyCon Warsaw 2013 was a blast!<br />
+                    <span class="place_date">December 20, 2013</span>
+                </a>
+            </h3>
+        </li>
+    </ul>
+
+<div class="link_01">
+    <a href="/blog/" class="png_fix">Visit Symfony's blog</a>
+</div>
+
+        </div>
+
+        <div class="column_02">
+                        <h2 class="title_05">IN THE NEWS</h2>
+
+
+<div class="upcoming_event clear_fix">
+    <div>
+        <a href="http://sensiolabs.com/en/symfony/certification.html" target="_blank">
+            <img style="width: 100px" src="/images/certification-big.png?v=4" class="png_fix" alt="The Symfony Certification by SensioLabs" />
+        </a>
+    </div>
+
+    <div style="margin-top: 13px">
+        <h3 style="font-size: 13px; font-family: 'Lucida Sans Unicode', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif">Symfony Certification: Now in 4,000 centers around the world!</h3>
+        <div style="margin-top: 5px">
+            <a href="http://sensiolabs.com/en/symfony/certification/order" class="non_extensible_button button_01">    <span class="border_l png_fix">
+        <span class="border_r png_fix">
+            <span class="btn_bg png_fix">
+                GET CERTIFIED
+            </span>
+        </span>
+    </span>
+</a>
+        </div>
+    </div>
+</div>
+
+
+                    </div>
+
+        <div class="column_03">
+            <h2 class="title_05">UPCOMING TRAINING SESSIONS</h2>
+
+<ul class="event_list">
+        <li>
+        <a href="http://trainings.sensiolabs.com/en/training/extending-and-hacking-symfony2">
+            Extending &amp; Hacking Symfony2
+            <br />
+            <span class="place_date">Paris - 2013-12-09</span>
+        </a>
+    </li>
+        <li>
+        <a href="http://trainings.sensiolabs.com/en/training/getting-started-with-symfony2">
+            Getting Started with Symfony2
+            <br />
+            <span class="place_date">Warsaw - 2013-12-10</span>
+        </a>
+    </li>
+        <li>
+        <a href="http://trainings.sensiolabs.com/en/training/extending-and-hacking-symfony2">
+            Extending &amp; Hacking Symfony2
+            <br />
+            <span class="place_date">Warsaw - 2013-12-10</span>
+        </a>
+    </li>
+    </ul>
+
+<div class="link_01">
+    <a href="http://trainings.sensiolabs.com/" class="png_fix">View all sessions</a>
+</div>
+
+        </div>
+    </div>
+</div>
+
+                        
+                    </div>
+                            </div>
+
+            
+<div class="footer">
+    <div class="content">
+        <h2 class="title_02">
+            <img src="/images/common/logo/logo_sf.png" alt="sf - Symfony" class="illustration_logo_footer png_fix"/> is a trademark of Fabien Potencier. All rights reserved.
+        </h2>
+
+        <div class="box_menu_footer clear_fix">
+            <div class="menu_footer first">
+                <h3 class="title_03"><a href="/what-is-symfony">What is Symfony?</a></h3>
+                <ul class="list_menu_footer">
+                    <ul class="clear_fix">
+            <li class="first ">
+                                                    <a href="/at-a-glance">Symfony at a Glance</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/in-five-minutes">Symfony in 5 Minutes</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/elevator-pitches">Elevator Pitches</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/blog/category/case-studies">Case Studies</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/doc/current/contributing/community/releases.html">Versioning Policy</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/doc/current/contributing/community/releases.html#long-term-support-releases">Long Term Support</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/doc/current/contributing/code/security.html">Security Policy</a>
+                    </li>
+            <li class="last ">
+                                                    <a href="/doc/current/contributing/code/license.html">License</a>
+                    </li>
+    </ul>
+
+                </ul>
+            </div>
+
+            <div class="menu_footer">
+                <h3 class="title_03"><a href="/get-started">Get Started</a></h3>
+                <ul class="list_menu_footer">
+                    <ul class="clear_fix">
+            <li class="first ">
+                                                    <a href="/download">Download Symfony</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/distributions">Symfony Distributions</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/components">Symfony Components</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/projects">Projects using Symfony</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/doc/current/quick_tour/the_big_picture.html">Quick Tour</a>
+                    </li>
+            <li class="last ">
+                                                    <a href="/legacy">symfony1 Legacy</a>
+                    </li>
+    </ul>
+
+                </ul>
+            </div>
+
+            <div class="menu_footer">
+                <h3 class="title_03"><a href="/doc/current/index.html">Learn Symfony</a></h3>
+                <ul class="list_menu_footer">
+                    <li class="first"><a href="/doc/current/book/index.html">The Book</a></li>
+<li><a href="/doc/current/cookbook/index.html">The Cookbook</a></li>
+<li><a href="/doc/current/components/index.html">The Components</a></li>
+<li class="selected"><a href="/doc/current/reference/index.html">Reference</a></li>
+<li><a href="/doc/current/glossary.html">Glossary</a></li>
+<li><a href="/doc/current/genindex.html">Index</a></li>
+<li><a href="/doc/current/bundles/index.html">Bundles</a></li>
+<li><a href="/doc/master/cmf/index.html">Symfony CMF</a></li>
+<li><a href="/doc/master/contributing/code/security.html#security-advisories">Security Advisories</a></li>
+<li><a href="/legacy/doc">Docs for symfony 1.x</a></li>
+<li><a href="/doc/current/contributing/index.html">Contributing</a></li>
+<li><a href="/talks">Talks</a></li>
+<li><a href="http://trainings.sensiolabs.com/">Trainings</a></li>
+<li class="last"><a href="http://books.sensiolabs.com">Books</a></li>
+                </ul>
+            </div>
+
+            <div class="menu_footer">
+
+                <h3 class="title_03"><a href="/community">Community</a></h3>
+                <ul class="list_menu_footer">
+                    <ul class="clear_fix">
+            <li class="first ">
+                                                    <a href="https://connect.sensiolabs.com/">SensioLabs Connect</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/irc">IRC Channel</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/mailing-lists">Mailing Lists</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="http://forum.symfony-project.org/">Forum</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/doc/current/contributing/index.html">How to be Involved</a>
+                    </li>
+            <li class="last ">
+                                                    <a href="http://jobs.sensiolabs.com">Job board</a>
+                    </li>
+    </ul>
+
+                </ul>
+
+                <h3 class="title_03"><a href="/blog/">Blog</a></h3>
+                <ul class="list_menu_footer">
+                    <li><a href="/events/"><em>Community Events</em></a></li>
+
+    <li><a href="/blog/category/a-week-of-symfony">A week of symfony</a></li>
+    <li><a href="/blog/category/call-the-expert">Call the expert</a></li>
+    <li><a href="/blog/category/case-studies">Case studies</a></li>
+    <li><a href="/blog/category/community">Community</a></li>
+    <li><a href="/blog/category/documentation">Documentation</a></li>
+    <li><a href="/blog/category/living-on-the-edge">Living on the edge</a></li>
+    <li><a href="/blog/category/other">Other</a></li>
+    <li><a href="/blog/category/plugins">Plugins</a></li>
+    <li><a href="/blog/category/releases">Releases</a></li>
+    <li><a href="/blog/category/security-advisories">Security Advisories</a></li>
+    <li><a href="/blog/category/silex">Silex</a></li>
+    <li><a href="/blog/category/symfony">Symfony</a></li>
+    <li><a href="/blog/category/symfony-cmf">Symfony CMF</a></li>
+    <li><a href="/blog/category/tutorials">Tutorials</a></li>
+    <li><a href="/blog/category/twig">Twig</a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu_footer">
+                <h3 class="title_03"><a href="/services">Services</a></h3>
+                <ul class="list_menu_footer">
+                    <li><a href="/services/list">Our services</a></li>
+<li><a href="http://trainings.sensiolabs.com/en">Train developers</a></li>
+<li><a href="/services/guide#before">Start a project</a></li>
+<li><a href="http://insight.sensiolabs.com/">Manage your project quality</a></li>
+<li><a href="/services/guide#during">Struggling with your project</a></li>
+<li><a href="http://sensiolabs.com/en/support/sensiolabs_support.html">Support</a></li>
+<li><a href="/services/request">Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="menu_footer">
+                <h3 class="title_03"><a href="/about">About</a></h3>
+                <ul class="list_menu_footer">
+                    <ul class="clear_fix">
+            <li class="first ">
+                                                    <a href="http://sensiolabs.com/recrutement/rejoignez_nous.html">SensioLabs</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/contributors">Contributors</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/roadmap">Roadmap</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/trademark">Trademark &amp; Logo Policy</a>
+                    </li>
+            <li class=" ">
+                                                    <a href="/logo">Logo</a>
+                    </li>
+            <li class="last ">
+                                                    <a href="http://sensiolabs.com/recrutement/rejoignez_nous.html">Jobs</a>
+                    </li>
+    </ul>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <script type="text/javascript">
+            (function(w, d, s) {
+                function go() {
+                    var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+                        if (d.getElementById(id)) {return;}
+                        js = d.createElement(s); js.src = url; js.id = id;
+                        fjs.parentNode.insertBefore(js, fjs);
+                    };
+                    load('https://connect.sensiolabs.com/sln.js?customize_url=http://symfony.com/sln_customiser.js', 'sln_bar');
+                }
+                if (w.addEventListener) { w.addEventListener("load", go, false); }
+                else if (w.attachEvent) { w.attachEvent("onload",go); }
+            } (window, document, 'script'));
+        </script>
+                    </body>
+</html>
